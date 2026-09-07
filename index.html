@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlantCare AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2>🌿 PlantCare AI</h2>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#how-it-works">How It Works</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <h1>Plant Disease Recognition</h1>
+
+                <p>
+                    Detect plant diseases using Artificial Intelligence.
+                    Upload a leaf image and get the disease information.
+                </p>
+
+                <button onclick="document.getElementById('leafImage').click()">
+                    📷 Upload Leaf Image
+                </button>
+
+                <input type="file" id="leafImage" accept="image/*" multiple hidden>
+
+            </div>
+
+
+            <div class="hero-image">
+                <div class="plant-icon">🌱</div>
+            </div>
+
+        </section>
+
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+
+            <h2>Analyze Your Plant</h2>
+
+            <p>Upload a clear image of the plant leaf.</p>
+
+            <div id="preview">
+                <p>No image selected</p>
+            </div>
+
+            <button id="analyzeBtn">
+                🔍 Analyze Image
+            </button>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section class="result-section">
+
+            <h2>🔍 Analysis Result</h2>
+
+            <div id="result">
+                <p>Your result will appear here.</p>
+            </div>
+
+        </section>
+<section class="info-section" id="about">
+    <h2>About PlantCare AI</h2>
+    <p>
+        PlantCare AI is an AI-based plant disease recognition system.
+        It analyzes plant leaf images and predicts possible diseases.
+    </p>
+</section>
+
+<section class="info-section" id="how-it-works">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+        <div>
+            <h3>1. Upload</h3>
+            <p>Upload a clear image of a plant leaf.</p>
+        </div>
+
+        <div>
+            <h3>2. Analyze</h3>
+            <p>Our trained AI model analyzes the uploaded image.</p>
+        </div>
+
+        <div>
+            <h3>3. Get Result</h3>
+            <p>The predicted disease and confidence are displayed.</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+    <footer>
+        <p>© 2026 PlantCare AI | AI-Based Plant Disease Recognition</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
